@@ -78,6 +78,7 @@
     });
 
 function sendMail(from_email, subject, body){
+  subject = "Pagina wearecode " +subject;
   $.ajax({
   type: "POST",
   url: "https://mandrillapp.com/api/1.0/messages/send.json",
@@ -90,8 +91,23 @@ function sendMail(from_email, subject, body){
             'email': 'angelrenegarcia13@gmail.com',
             'name': 'Angel Garcia',
             'type': 'to'
-          }
-        ],
+          },
+		  {
+            'email': 'arturomejiamarmol@gmail.com',
+            'name': 'Arturo Mejia',
+            'type': 'to'
+          },
+		  {
+            'email': 'jzabala.s@gmail.com',
+            'name': 'Johnny Zabala',
+            'type': 'to'
+          },
+		  {
+            'email': 'santiagoramirez11@gmail.com',
+            'name': 'Santiago Ramirez',
+            'type': 'to'
+          }  
+        ], 
       'autotext': 'true',
       'subject': subject,
       'html': body
