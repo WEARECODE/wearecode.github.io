@@ -342,7 +342,7 @@
 
         .subtitleName {
             font-weight: 900;
-            color: rgb(158,157,36);
+            color: #1976D2;
         }
 
         .responsive-img {
@@ -391,6 +391,7 @@
         }
         
         a{
-            color: #689F38;
+            color: #1976D2;
+            text-decoration: none;
             cursor: pointer;
         }

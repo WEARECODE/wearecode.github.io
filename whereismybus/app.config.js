@@ -7,7 +7,7 @@
     
     function config($mdIconProvider, $mdThemingProvider, $routeProvider) {
               $mdThemingProvider.theme('default')
-                    .primaryPalette('teal')
+                    .primaryPalette('blue')
                     .accentPalette('blue-grey');
               var rootURL = "./";
 

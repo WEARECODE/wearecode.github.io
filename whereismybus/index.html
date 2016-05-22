@@ -39,9 +39,9 @@
             </md-list>
         </md-sidenav>
 
-        <md-content flex id="content" layout-align="center center" ng-view>
-            
-        </md-content>
+        <div flex layout="column" >
+            <div ng-view flex layout="column"></div>
+        </div>
     </div>
     
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
