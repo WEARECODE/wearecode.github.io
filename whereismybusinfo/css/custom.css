@@ -395,3 +395,17 @@
             text-decoration: none;
             cursor: pointer;
         }
+        
+        md-list-item ._md-list-item-inner .md-avatar, md-list-item .md-avatar {
+            -webkit-flex: none;
+            -ms-flex: none;
+            flex: none;
+            width: 70px;
+            height: 70px;
+        }
+        
+      .link{
+            color: #1976D2 !important;
+            text-decoration: none;
+            cursor: pointer;
+        }

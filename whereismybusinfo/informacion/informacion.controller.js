@@ -11,7 +11,7 @@
         vm.openUrl = openUrl;
         
         function openUrl(param) {
-            window.open(param);
+            window.open(param, "_blank");
             return false;
         }
     }
