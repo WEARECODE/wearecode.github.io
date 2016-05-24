@@ -14,7 +14,8 @@
             window.open(param, "_blank");
             return false;
         }
-        /*Delete on app*/
+        /*uncomment on app*/
+        /*
         $http.get("http://wearecode.net/whereismybusinfo/")
             .then(function(response) {
                 var status = response.status;
@@ -22,5 +23,6 @@
                     window.location = "http://wearecode.net/whereismybusinfo/";
                 }
             });
+            */
     }
 })();
