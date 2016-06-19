@@ -81,37 +81,13 @@ function sendMail(from_email, subject, body){
   subject = "Pagina wearecode " +subject;
   $.ajax({
   type: "POST",
-  url: "https://mandrillapp.com/api/1.0/messages/send.json",
+  url: "http://emailservice481.azurewebsites.net/api/Values",
+  headers: {"Access-Control-Allow-Origin": "*"},
   data: {
-    'key': 'qhOvWDRHFH36DPnARcVZXw',
-    'message': {
-      'from_email': from_email,
-      'to': [
-          {
-            'email': 'angelrenegarcia13@gmail.com',
-            'name': 'Angel Garcia',
-            'type': 'to'
-          },
-		  {
-            'email': 'arturomejiamarmol@gmail.com',
-            'name': 'Arturo Mejia',
-            'type': 'to'
-          },
-		  {
-            'email': 'jzabala.s@gmail.com',
-            'name': 'Johnny Zabala',
-            'type': 'to'
-          },
-		  {
-            'email': 'santiagoramirez11@gmail.com',
-            'name': 'Santiago Ramirez',
-            'type': 'to'
-          }  
-        ], 
-      'autotext': 'true',
-      'subject': subject,
-      'html': body
-    }
+      'SenderEmail': from_email,
+      'Subject': subject,
+      'Source':'wearecode',
+      'BodyText': body
   }
  }).done(function(response) {
    console.log(response);
