@@ -347,9 +347,12 @@
 	    <div class="row mt centered">
 	          <div class="col-sm-6 col-xs-12 col-centered">
 	            <form name="sendmail" id="sendmail" action="#" method="POST">
-	                <input type="text" name="subject" placeholder="Subject..." required="" class="postLeft">
-	                <input type="email" name="email" placeholder="Email Address..." required="" class="postRight">
-	                <textarea rows="6" name="message" placeholder="Message" required="" class="postLeft"></textarea>
+                    <label for="subject" class="sr-only">Subject</label>
+	                <input type="text" name="subject" id="subject" placeholder="Subject..." required="" class="postLeft">
+                    <label for="email" class="sr-only">Email Address</label>
+	                <input type="email" name="email" id="email" placeholder="Email Address..." required="" class="postRight">
+                    <label for="message" class="sr-only">Message</label>
+	                <textarea rows="6" name="message" placeholder="Message" required="" class="postLeft" id="message"></textarea>
 	                <input type="submit" value="SEND" data-loading-text="Enviando..." class="postBounceDown"> 
 	                </form>
 	                <div id="myAlert" class="alert alert-warning alert-dismissible fade in hidden" role="alert">
